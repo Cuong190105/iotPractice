@@ -39,6 +39,7 @@ void setup() {
 }
 
 void controlOutput() {
+  // Active buzzer can't change frequency. Should replace tone with a rhythm maker.
   if (stage == 1) {
     for (int j = 0; j < 4; j++) {
       digitalWrite(led[j], HIGH);
