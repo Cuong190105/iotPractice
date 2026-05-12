@@ -7,7 +7,7 @@ char* password = "12345678";
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-  WiFi.mode(WIFI_AP);
+  WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
